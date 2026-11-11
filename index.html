@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Condominio Edificio ADAMES — Estado de cuenta</title>
+  <meta name="description" content="Estado de cuenta público del Condominio Edificio ADAMES, Residencial Jardines de Madre Vieja Norte, San Cristóbal.">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cab">
+    <div class="contenedor cab-fila">
+      <div>
+        <h1 id="nombre">Condominio Edificio ADAMES</h1>
+        <p id="ubicacion"></p>
+      </div>
+      <p id="actualizado"></p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <div id="mensajes"></div>
+
+    <section class="kpis" id="kpis" aria-label="Resumen"></section>
+
+    <section class="dos">
+      <div class="panel">
+        <h2>Ingresos y gastos por mes</h2>
+        <div class="grafico" id="grafico"></div>
+        <div class="leyenda">
+          <span style="--c: var(--verde)">Ingresos</span>
+          <span style="--c: var(--rojo)">Gastos</span>
+        </div>
+        <p class="nota">Los pagos adelantados se reparten entre los meses que cubren.</p>
+      </div>
+      <div class="panel">
+        <h2>Gastos por categoría</h2>
+        <div class="barras-h" id="categorias"></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Estado por apartamento</h2>
+      <div class="tabla-scroll"><table id="tabla-aptos"></table></div>
+      <div class="leyenda">
+        <span style="--c: var(--verde)">Mes pagado</span>
+        <span style="--c: var(--ambar)">Pago parcial</span>
+        <span style="--c: var(--rojo)">Pendiente</span>
+        <span style="--c: var(--gris-f)">Aún no vence</span>
+      </div>
+      <p class="nota" id="nota-vence"></p>
+    </section>
+
+    <section class="panel" id="sec-cargos" hidden>
+      <h2>Cuotas extraordinarias</h2>
+      <div class="tabla-scroll"><table id="tabla-cargos"></table></div>
+    </section>
+
+    <section class="panel">
+      <h2>Movimientos</h2>
+      <div class="filtros">
+        <select id="f-tipo" aria-label="Tipo de movimiento">
+          <option value="">Pagos y gastos</option>
+          <option value="pago">Solo pagos</option>
+          <option value="gasto">Solo gastos</option>
+        </select>
+        <select id="f-mes" aria-label="Mes"></select>
+        <select id="f-apto" aria-label="Apartamento"></select>
+      </div>
+      <div class="tabla-scroll"><table id="tabla-mov"></table></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      Creada y desarrollada por Abdul Lugo (Nov. 2026). © 2026 Abdul Lugo. Todos los derechos reservados.
+      <span id="historial"></span>
+    </div>
+  </footer>
+
+  <script src="js/comun.js"></script>
+  <script src="js/publico.js"></script>
+</body>
+</html>

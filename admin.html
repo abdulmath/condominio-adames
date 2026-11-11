@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Administración — Condominio Edificio ADAMES</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header class="cab">
+    <div class="contenedor cab-fila">
+      <div>
+        <h1>Administración</h1>
+        <p>Condominio Edificio ADAMES · <a href="index.html">Ver dashboard público</a></p>
+      </div>
+      <button id="salir" hidden>Cerrar sesión</button>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <!-- Acceso -->
+    <div class="panel acceso" id="acceso">
+      <h2>Acceso del administrador</h2>
+      <p class="nota">El acceso se hace con un token personal de GitHub que tenga permiso de escritura sobre el repositorio del condominio. El token no se envía a ningún sitio distinto de GitHub.</p>
+      <form id="form-acceso">
+        <label>Repositorio (usuario/nombre)
+          <input id="repo" required placeholder="usuario/condominio-adames" autocomplete="off">
+        </label>
+        <label>Token de acceso
+          <input id="token" type="password" required autocomplete="off">
+        </label>
+        <label style="display:flex;gap:8px;align-items:center">
+          <input type="checkbox" id="recordar"> Recordar el token en este equipo
+        </label>
+        <button class="primario">Entrar</button>
+        <button type="button" id="modo-local" hidden>Probar sin conexión (modo local)</button>
+      </form>
+      <div id="msg-acceso"></div>
+    </div>
+
+    <!-- Panel -->
+    <div id="panel" hidden>
+      <div class="barra-guardar">
+        <span id="estado-guardado"></span>
+        <span>
+          <button id="respaldo">Descargar respaldo</button>
+          <button id="publicar" class="primario" disabled>Publicar cambios</button>
+        </span>
+      </div>
+      <div id="msg-panel"></div>
+
+      <nav class="tabs" id="tabs"></nav>
+      <div class="panel">
+        <form class="ficha" id="ficha"></form>
+      </div>
+      <section class="panel" id="sec-lista">
+        <div class="tabla-scroll"><table id="lista"></table></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/comun.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
