@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "actualizado": "2026-11-11T18:30:00.000Z",
+  "config": {
+    "nombre": "Condominio Edificio ADAMES",
+    "ubicacion": "Residencial Jardines de Madre Vieja Norte, San Cristóbal, República Dominicana",
+    "moneda": "RD$",
+    "mesInicio": "2026-09",
+    "saldoInicial": 0,
+    "aviso": "",
+    "diaVencimiento": 25
+  },
+  "apartamentos": [
+    {
+      "id": "101",
+      "propietario": "Miguelina LaChapelle",
+      "cuota": 2000,
+      "saldoInicial": 0
+    },
+    {
+      "id": "201",
+      "propietario": "José Adames",
+      "cuota": 2000,
+      "saldoInicial": 0
+    },
+    {
+      "id": "202",
+      "propietario": "Abdul Lugo",
+      "cuota": 2000,
+      "saldoInicial": 0
+    },
+    {
+      "id": "301",
+      "propietario": "",
+      "cuota": 2000,
+      "saldoInicial": 0
+    },
+    {
+      "id": "302",
+      "propietario": "Sandieska",
+      "cuota": 2000,
+      "saldoInicial": 0
+    }
+  ],
+  "pagos": [
+    {
+      "id": "ini-101",
+      "fecha": "2026-11-11",
+      "apto": "101",
+      "monto": 8000,
+      "metodo": "Efectivo",
+      "nota": "Mensualidades de septiembre a diciembre 2026 (registro inicial)",
+      "mesDesde": "2026-09",
+      "mesHasta": "2026-12"
+    },
+    {
+      "id": "ini-202",
+      "fecha": "2026-11-11",
+      "apto": "202",
+      "monto": 8000,
+      "metodo": "Efectivo",
+      "nota": "Mensualidades de septiembre a diciembre 2026 (registro inicial)",
+      "mesDesde": "2026-09",
+      "mesHasta": "2026-12"
+    },
+    {
+      "id": "ini-302",
+      "fecha": "2026-11-11",
+      "apto": "302",
+      "monto": 4000,
+      "metodo": "Efectivo",
+      "nota": "Mensualidades de septiembre y octubre 2026 (registro inicial)",
+      "mesDesde": "2026-09",
+      "mesHasta": "2026-10"
+    }
+  ],
+  "cargos": [],
+  "gastos": [
+    {
+      "id": "g-2026-11-06-limpieza",
+      "fecha": "2026-11-06",
+      "categoria": "Limpieza",
+      "descripcion": "Cuota de la señora de limpieza",
+      "monto": 2000,
+      "comprobante": "",
+      "soporte": "",
+      "pagadoPor": "",
+      "metodo": "Efectivo"
+    },
+    {
+      "id": "g-2026-11-06-articulos",
+      "fecha": "2026-11-04",
+      "categoria": "Limpieza",
+      "descripcion": "Artículos de limpieza (Supermercado Bravo)",
+      "monto": 1447,
+      "comprobante": "",
+      "soporte": "",
+      "pagadoPor": "",
+      "metodo": ""
+    },
+    {
+      "id": "g-2026-11-01-seguridad",
+      "fecha": "2026-11-01",
+      "categoria": "Seguridad",
+      "descripcion": "4 candados y una caja chica para guardar los fondos del condominio (La Sirena)",
+      "monto": 6839,
+      "comprobante": "",
+      "soporte": "",
+      "pagadoPor": "",
+      "metodo": ""
+    }
+  ]
+}
