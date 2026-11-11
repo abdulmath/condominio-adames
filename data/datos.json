@@ -79,7 +79,7 @@
     {
       "id": "g-2026-11-06-limpieza",
       "fecha": "2026-11-06",
-      "categoria": "Limpieza",
+      "categoria": "Personal de limpieza",
       "descripcion": "Cuota de la señora de limpieza",
       "monto": 2000,
       "comprobante": "",
@@ -90,7 +90,7 @@
     {
       "id": "g-2026-11-06-articulos",
       "fecha": "2026-11-04",
-      "categoria": "Limpieza",
+      "categoria": "Artículos de limpieza",
       "descripcion": "Artículos de limpieza (Supermercado Bravo)",
       "monto": 1447,
       "comprobante": "",

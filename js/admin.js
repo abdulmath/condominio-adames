@@ -14,7 +14,7 @@
   let borrados = [];     // facturas reemplazadas o de gastos eliminados, por borrar del repositorio
   const MAX_PDF = 5 * 1024 * 1024;
 
-  const CATEGORIAS = ['Electricidad', 'Agua', 'Limpieza', 'Mantenimiento', 'Seguridad', 'Jardinería', 'Administración', 'Otros'];
+  const CATEGORIAS = ['Electricidad', 'Agua', 'Personal de limpieza', 'Artículos de limpieza', 'Mantenimiento', 'Seguridad', 'Jardinería', 'Administración', 'Otros'];
   const METODOS = ['Transferencia', 'Efectivo', 'Depósito', 'Cheque', 'Devolución'];
 
   // t: date | number | text | select | apto | apto-todos
